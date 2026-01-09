@@ -10,6 +10,7 @@ sudo mv polly/ /var/www/html/
 echo site installed! 
 sudo rm -rf /etc/nginx/sites-avaliable/default
 echo patching config
+sudo mkdir /etc/nginx/sites-avaliable/
 mv patch default
 sudo mv default /etc/nginx/sites-avaliable/
 echo done!! 
