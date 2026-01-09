@@ -8,11 +8,10 @@ git clone https://github.com/Joe-The-Chicken/polytrack polly/
 echo uploading new site
 sudo mv polly/ /var/www/html/
 echo site installed! 
-sudo rm -rf /etc/nginx/sites-avaliable/default
+sudo rm -rf /etc/nginx/sites-available/default
 echo patching config
-sudo mkdir /etc/nginx/sites-avaliable/
 mv patch default
-sudo mv default /etc/nginx/sites-avaliable/
+sudo mv default /etc/nginx/sites-available/
 echo done!! 
 echo reloading config
 sudo nginx
