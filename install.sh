@@ -1,4 +1,4 @@
-// polly trck installer by schoolwiki
+sudo apt update -y
 echo installing web server
 sudo apt install nginx -y
 echo removing default files
@@ -10,7 +10,8 @@ sudo mv polly/ /var/www/html/
 echo site installed! 
 sudo rm -rf /etc/nginx/sites-avaliable/default
 echo patching config
-sudo mv patch /etc/nginx/sites-avaliable/default
+mv patch default
+sudo mv default /etc/nginx/sites-avaliable/
 echo done!! 
 echo reloading config
 sudo nginx
