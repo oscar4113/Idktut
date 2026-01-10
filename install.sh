@@ -1,6 +1,9 @@
-sudo apt update -y
+#!/bin/bash
+sudo apt update
 echo installing web server
-sudo apt install nginx -y
+sudo apt install nginx
+echo installing json parser
+sudo apt install jq
 echo removing default files
 sudo rm -rf /var/www/html
 echo downloading new site
