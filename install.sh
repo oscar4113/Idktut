@@ -7,12 +7,8 @@ sudo apt install jq -y
 echo removing default files
 sudo rm -rf /var/www/html
 echo starting select script
-. parse.sh
-echo downloading game
-git clone "$fin" game
-echo uploading new site
-sudo mv game/ /var/www/html/
-echo site installed! 
+bash ./select.sh
+echo removing default config
 sudo rm -rf /etc/nginx/sites-available/default
 echo patching config
 mv patch default
